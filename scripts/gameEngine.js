@@ -29,7 +29,7 @@ class GameEngine
     {
         if(Computer.playerAmmo >= 3)
         {
-                document.getElementById("pImage").src = "images/shotgun.gif";
+                document.getElementById("pImage").src = "images/shotgun2.gif";
                 result.playerInput=4;
                 result.CalculateResult();
         }
@@ -39,7 +39,7 @@ class GameEngine
     {
         if(Computer.playerAmmo >= 1)
         {
-            document.getElementById("pImage").src = "images/shoot.gif";
+            document.getElementById("pImage").src = "images/shoot3.gif";
             Computer.input = 1;
             Computer.CalculateComputer();      
             
@@ -66,7 +66,7 @@ class GameEngine
 
     PlayerBlock()
     {
-        document.getElementById("pImage").src = "images/block.gif";
+        document.getElementById("pImage").src = "images/block2.gif";
         
         Computer.input = 3;
         Computer.CalculateComputer();      

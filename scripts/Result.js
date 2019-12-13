@@ -42,17 +42,20 @@ class ResultCalculation
                 setTimeout(function() 
                 {   
                     if(winner==1)
-                    alert("Player Wins");
+                    {
+                        document.getElementById("cImage").src = "images/loser2.gif";
+                        alert("Player Wins");
+                    }
                     else
-                    alert("Computer Wins");
+                    {
+                        document.getElementById("pImage").src = "images/loser2.gif";
+                        alert("Computer Wins");
+                    }
 
                     Computer.playerAmmo = 0;
                     Computer.computerAmmo = 0;
                     document.getElementById("ammoButtonP").innerText = "Ammo: " + Computer.playerAmmo;
                     document.getElementById("ammoButtonC").innerText = "Ammo: " + Computer.computerAmmo;
-
-                    document.getElementById("pImage").src = "images/idle.gif";
-                    document.getElementById("cImage").src = "images/idle.gif";
 
                     document.getElementById("startGameButton").disabled = false;
                     document.getElementById("shotgunButton").disabled = true;
