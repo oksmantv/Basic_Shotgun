@@ -77,7 +77,7 @@ class ComputerAI
                     result.CalculateResult();
                     return;
                 }
-                document.getElementById("cImage").src = "images/shoot.gif";
+                document.getElementById("cImage").src = "images/shoot3.gif";
                 this.computerAmmo = this.computerAmmo - 1;
                 document.getElementById("ammoButtonC").innerHTML = "Ammo: " + this.computerAmmo;
                 break;
@@ -85,7 +85,12 @@ class ComputerAI
 
             case 2: // Computer Loads
             {
+
+                if(this.computerAmmo == 2)
+                document.getElementById("cImage").src = "images/reloadshotgun.gif";
+                else
                 document.getElementById("cImage").src = "images/reload.gif";
+
                 this.computerAmmo = this.computerAmmo + 1;
                 document.getElementById("ammoButtonC").innerHTML = "Ammo: " + this.computerAmmo;
                 break;
@@ -93,7 +98,7 @@ class ComputerAI
 
             case 3: // Computer Blocks
             {
-                document.getElementById("cImage").src = "images/block.gif";
+                document.getElementById("cImage").src = "images/block2.gif";
                 break;
             }
 
